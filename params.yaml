@@ -1,0 +1,19 @@
+# Data Preprocessing Parameters
+data:
+  target_size: [224, 224]
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+
+# Deep Learning Training Hyperparameters
+train:
+  backbone: "resnet50"
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 15
+  optimizer: "adam"
+
+# Engineering Metric Custom Scaling
+metrics:
+  gradcam_threshold: 0.5
+  structural_beta: 2.5
